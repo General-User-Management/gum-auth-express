@@ -1,0 +1,38 @@
+{
+  "name": "gum-auth-express",
+  "version": "1.0.0",
+  "description": "GUM auth express middleware",
+  "main": "./lib",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "standardfix": "standard --fix",
+    "standard": "standard",
+    "UnitTest": "mocha ./test/UnitTest*.js",
+    "IntegrationTest": "mocha ./test/IntegrationTest*.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/General-User-Management/gum-auth-express.git"
+  },
+  "keywords": [
+    "gum",
+    "auth"
+  ],
+  "author": "huangyingxian",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.19.2",
+    "express-unless": "^0.3.0"
+  },
+  "standard": {
+    "ignore": [
+      "/**/UnitTest*.js",
+      "/**/IntegrationTest*.js",
+      "/**/SystemTest*.js"
+    ],
+    "globals": [
+      "consumer",
+      "producer"
+    ]
+  }
+}
